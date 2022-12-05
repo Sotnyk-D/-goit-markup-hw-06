@@ -700,7 +700,8 @@ p {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--primery-fill-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-list .icon-clients {
@@ -875,12 +876,13 @@ p {
 .subscribe-input {
   width: 358px;
   height: 50px;
-
+  padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--pramery-footer-color);
   color: var(--pramery-white-color);
+  outline: none;
 }
 
 .subscribe-btn {
@@ -895,7 +897,7 @@ p {
   padding: 10px 62px 10px 28px;
   border: none;
   border-radius: 4px;
-
+  cursor: pointer;
   letter-spacing: 0.06em;
   color: var(--pramery-white-color);
   background-color: var(--accent-color);
